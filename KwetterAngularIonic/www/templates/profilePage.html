@@ -1,0 +1,13 @@
+<ion-view title="Profile page" id="page5">
+    <ion-content padding="true" class="has-header">
+        <a ui-sref="tabsController.profileEditor({name: user.name})" id="profilePage-button2" class="button button-royal button-small button-block button-outline">Edit this profile</a>
+        <h1 id="profilePage-heading2" style="color:#000000;">{{user.name}}</h1>
+        <div id="profilePage-markdown4" style="color:#BCBCBC;">
+            <p>{{user.location}}</p>
+        <div class="spacer" style="width: 285px; height: 23px;"></div>
+        <div id="profilePage-markdown2" style="color:#000000;">
+            <p>{{user.bio}}</p>
+        </div>
+        <a href="{{user.web}}" onClick="window.open(this.href, '_blank', 'location=yes'); return false;" class="button button-positive button-block ">Bezoek website</a>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,16 @@
+<ion-view title="Profile editor" id="page6">
+    <ion-content padding="true" class="has-header">
+        <h1 id="profileEditor-heading3" style="color:#000000;">{{user.name}}</h1>
+        <div class="spacer" style="width: 285px; height: 51px;"></div>
+        <div id="profileEditor-markdown5" style="color:#000000;">
+            <p>Bio</p>
+        </div>
+        <form class="list"">
+            <label class="item item-input">
+                <input type="text" placeholder="{{user.bio}}" value="{{user.bio}}" ng-model="data.bio">
+            </label>
+        </form>
+        <div class="spacer" style="height: 100px;"></div>
+        <a ui-sref="tabsController.profiles" id="profileEditor-button3" class="button button-balanced  button-block" ng-click="saveUser()">Save</a>
+    </ion-content>
+</ion-view>
